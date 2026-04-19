@@ -3,7 +3,9 @@
 Effect Schema utilities for domain modeling with branded types.
 
 [![npm version](https://img.shields.io/npm/v/@arckit/effect)](https://www.npmjs.com/package/@arckit/effect)
-[![CI](https://github.com/arckit-dev/effect/actions/workflows/feature-branch.yml/badge.svg)](https://github.com/arckit-dev/effect/actions/workflows/feature-branch.yml)
+[![npm downloads](https://img.shields.io/npm/dm/@arckit/effect)](https://www.npmjs.com/package/@arckit/effect)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@arckit/effect)](https://bundlephobia.com/package/@arckit/effect)
+[![codecov](https://codecov.io/gh/arckit-dev/effect/graph/badge.svg)](https://codecov.io/gh/arckit-dev/effect)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Effect](https://img.shields.io/badge/Effect-3-black)](https://effect.website/)
 

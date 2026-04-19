@@ -13,6 +13,7 @@ export default {
       }
     ],
     '@semantic-release/npm',
+    ['@semantic-release/exec', { prepareCmd: 'pnpm biome format --write package.json' }],
     [
       '@semantic-release/git',
       {
