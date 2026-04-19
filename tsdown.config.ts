@@ -7,5 +7,5 @@ export default defineConfig({
   hash: false,
   sourcemap: true,
   clean: true,
-  outDir: 'dist',
+  outDir: 'dist'
 });
