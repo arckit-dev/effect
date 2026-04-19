@@ -13,14 +13,7 @@
   "bugs": {
     "url": "https://github.com/arckit-dev/effect/issues"
   },
-  "keywords": [
-    "arckit",
-    "effect",
-    "schema",
-    "domain",
-    "model",
-    "branded-types"
-  ],
+  "keywords": ["arckit", "effect", "schema", "domain", "model", "branded-types"],
   "type": "module",
   "exports": {
     ".": {
@@ -37,9 +30,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "sideEffects": false,
   "engines": {
     "node": ">=22"
@@ -70,8 +61,10 @@
     "@commitlint/cli": "^20.0.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/exec": "^7.0.0",
     "@semantic-release/git": "^10.0.0",
     "@size-limit/file": "^11.0.0",
+    "@vitest/coverage-v8": "^4.0.0",
     "effect": "^3.0.0",
     "husky": "^9.0.0",
     "knip": "^5.0.0",

@@ -108,14 +108,28 @@ pnpm test
 - [Husky](https://typicode.github.io/husky/): git hooks for automatic checks
 - [Commitlint](https://github.com/conventional-changelog/commitlint): conventional commits validation
 - [Lint-staged](https://github.com/okonet/lint-staged): linters on staged git files
+- [Codecov](https://codecov.io/): code coverage reporting
 
 <h2 id="cicd">🔄 CI/CD</h2>
+
+### Repository Setup
+
+Enable **Dependency graph** in the repository settings: Settings → Security and quality → Advanced Security → Dependency graph → Enable. This is required for the dependency review CI job to work on pull requests.
+
+### Required Secrets
+
+The following secrets must be configured at the organization level (`arckit-dev`) in GitHub: Settings → Secrets and variables → Actions.
+
+| Secret | Description | How to obtain |
+|--------|-------------|---------------|
+| `NPM_TOKEN` | npm granular access token scoped to `@arckit` | [npmjs.com](https://www.npmjs.com/) → Access Tokens → Granular Access Token (read and write on `@arckit` scope) |
+| `CODECOV_TOKEN` | Codecov upload token | [app.codecov.io](https://app.codecov.io/gh/arckit-dev/effect/config/general) → Repository upload token |
 
 ### Workflows
 
 | Workflow | Trigger | Description |
 |----------|---------|-------------|
-| [Feature branch](.github/workflows/feature-branch.yml) | Push to feature branch / PR | Lint, type-check, test, build, package quality checks |
+| [CI](.github/workflows/ci.yml) | Push to `main` / PR | Lint, type-check, test, build, package quality checks, coverage upload to [Codecov](https://codecov.io/gh/arckit-dev/effect) |
 | [Release](.github/workflows/release.yml) | Push to `main` | Build and publish to npm via [semantic-release](https://semantic-release.gitbook.io/) |
 
 <h2 id="versioning">🏷️ Versioning</h2>
