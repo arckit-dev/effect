@@ -1,6 +1,6 @@
 {
   "name": "@arckit/effect",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Effect Schema utilities for domain modeling with branded types",
   "packageManager": "pnpm@10.33.0",
   "license": "MIT",

@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/arckit-dev/effect/compare/v1.0.1...v1.1.0) (2026-05-08)
+
+
+### Features
+
+* add tagged error helper ([f107905](https://github.com/arckit-dev/effect/commit/f1079050577fc6b614255b9b145f00c09017ebc6))
+
 ## [1.0.1](https://github.com/arckit-dev/effect/compare/v1.0.0...v1.0.1) (2026-04-19)
 
 
